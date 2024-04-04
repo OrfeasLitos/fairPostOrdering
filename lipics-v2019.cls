@@ -591,7 +591,7 @@
 \def\ArticleNo#1{\gdef\@ArticleNo{#1}}
 \ArticleNo{}
 \def\DOIPrefix#1{\gdef\@DOIPrefix{#1}}
-\DOIPrefix{10.4230/LIPIcs}
+\DOIPrefix{}
 \def\and{\newline}
 \let\orig@author\@author
 \let\@authorsfortoc\@empty
@@ -697,11 +697,13 @@
     {Since 2019, \string\subjclass\space is obsolete in lipics.}}
 \let\@subjclass\@empty
 \def\subjclassHeading{%
-  \textcolor{darkgray}{\fontsize{9}{12}\sffamily\bfseries
-                       2012 ACM Subject Classification\enskip}}
+%  \textcolor{darkgray}{\fontsize{9}{12}\sffamily\bfseries
+%                       2012 ACM Subject Classification\enskip}
+}
 \def\doiHeading{%
-  \textcolor{darkgray}{\fontsize{9}{12}\sffamily\bfseries
-                       Digital Object Identifier\enskip}}
+%  \textcolor{darkgray}{\fontsize{9}{12}\sffamily\bfseries
+%                       Digital Object Identifier\enskip}
+}
 \def\category#1{\def\@category{#1}}
 \let\@category\@empty
 \def\categoryHeading{%
